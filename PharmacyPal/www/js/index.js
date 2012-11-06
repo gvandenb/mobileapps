@@ -27,6 +27,7 @@ var app = {
  	    	
     		$('#bcast0').click(function() {
     			currentTicketRequest = $("select#select-choice-min0").val();
+    			
     			// set current place
      	    	curCheckin.place = curPlace;
      	    	
