@@ -1,0 +1,52 @@
+body
+{
+	background:#073972;
+}
+
+.errorMessage {
+	color:#ff0000;
+}
+
+#popupPanel {
+    width: 256px;
+    height:161px;
+    color:#ffffff;
+    border:none;
+    border-right: none;
+    background: transparent url('../images/menubknd2.png') repeat-x top left;
+    margin: -1px 10px 0px 0px;
+}
+
+#popupPanel-screen {
+    background: rgba(0,0,0,.7);
+}
+
+#popupMap {
+    width: 256px;
+ 
+    color:#ffffff;
+    border: 3px solid #ffffff;
+    
+    /* background: transparent url('../images/menubknd1.png') repeat-x top left; */
+    background: #1275a4;
+    margin: 0px 0px 0px 0px;
+}
+
+#popupMap-screen {
+    background: rgba(0,0,0,.7);
+}
+
+.ui-btn-corner-all {
+	-moz-border-radius: 0.5em /*{global-radii-buttons}*/;
+	-webkit-border-radius: 0.5em /*{global-radii-buttons}*/;
+	border-radius: 0.5em /*{global-radii-buttons}*/;
+}
+
+.contentWrapper {
+	padding:15px 15px 0px 15px;
+	background: #ffffff;
+	color:#000000;
+}
+.mainHeader {
+	border-bottom:2px solid white;	
+}

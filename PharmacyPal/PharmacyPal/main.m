@@ -20,16 +20,16 @@
 //  main.m
 //  PharmacyPal
 //
-//  Created by Greg Vandenberg on 11/5/12.
-//  Copyright Greg Vandenberg 2012. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 int main(int argc, char *argv[]) {
     
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
-    [pool release];
-    return retVal;
+    @autoreleasepool {
+	int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
+	return retVal;
+    }
 }

@@ -27,7 +27,6 @@ var app = {
  	    	
     		$('#bcast0').click(function() {
     			currentTicketRequest = $("select#select-choice-min0").val();
-    			
     			// set current place
      	    	curCheckin.place = curPlace;
      	    	
@@ -108,7 +107,6 @@ var app = {
  		 	   		},
  		 	   		error: function(){
  		 	   			console.log("An error occured while checking in: " + data.result);
- 		 	   			console.log(data.result);
  		 	   			$.mobile.hidePageLoadingMsg();
  		 	   			//alert('There was an error adding your message');
  		 	   		}

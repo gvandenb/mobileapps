@@ -21,15 +21,11 @@
 //  MainViewController.h
 //  PharmacyPal
 //
-//  Created by Greg Vandenberg on 11/5/12.
-//  Copyright Greg Vandenberg 2012. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
-#ifdef CORDOVA_FRAMEWORK
-    #import <Cordova/CDVViewController.h>
-#else
-    #import "CDVViewController.h"
-#endif
+#import <Cordova/CDVViewController.h>
 
 @interface MainViewController : CDVViewController
 
