@@ -25,64 +25,84 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
         <meta charset="utf-8">
-            <link rel="stylesheet" href="css/jquery-pharmacy-theme.css" />
-            <link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
-            <link rel="stylesheet" href="css/index.css" />
-       
-            
-            
-            <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
-            
-            <script type="text/javascript" src="js/google-maps-places.js"></script>
-            
-            <script type="text/javascript" src="js/jquery.min.js"></script>
-            <script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
-            <script type="text/javascript" src="js/jquery.ui.map.microformat.js"></script>
-            
-            <script type="text/javascript" src="js/jquery.ui.map.js"></script>
-            <script type="text/javascript" src="js/jquery.ui.map.overlays.js"></script>
-            <script type="text/javascript" src="js/jquery.ui.map.extensions.js"></script>
-            <script type="text/javascript" charset="utf-8" src="js/PushNotification.js"></script>
-            <script type="text/javascript" charset="utf-8" src="js/SMSComposer.js"></script>
-            <script type="text/javascript" src="js/index.js"></script>
-            <script type="text/javascript" src="js/applicationPreferences.js"></script>
-            
+ 
             
             </head>
     <body >
-        <div id="home" data-role="page" class="mainPage ui-corner-all">
+        <div id="prescriptions" data-role="page" class="mainPage ui-corner-all">
             <div data-role="header" align="center" class="mainHeader" data-position="fixed">
                 <img src="img/icon.png" height="36" width="36" class="ui-btn-left"/>
-                Profiles
+                Prescriptions
                 <a href="profile_add.html" style="" data-theme="a" data-transition="slide" class="ui-btn-right" data-icon="plus">add</a>
-            	
-            </div>
+			</div>
             <div data-role="content" class="mainContent ui-background-striped" >
                 <ul data-role="listview" style="margin-top:0px;">
+                	<li data-role="list-divider" class="ui-background-striped ui-border-none">
+                		<img src="img/rachel.jpg" alt="Rachel" height="50" width="50">
+                		<h3 style="margin-left:45px;">Rachel Trippel</h3>
+                	</li>
+					
+                    <li data-theme="a">
+                    	<a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051256</h3>
+	                    	<p><strong>Metopropol</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
+                    </li>
                     <li data-theme="a">
                         <a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
-                            <img src="img/rachel.jpg" />
-                            <h4>Rachel Trippel</h4>
-                        </a>
+	                    	<h3 style="margin-top:0px;">#200304051257</h3>
+	                    	<p><strong>Vicadin</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
+                    </li>
+                    <li data-role="list-divider" class="ui-background-striped">
+                		<img src="img/greg.jpg" alt="Greg" height="50" width="50">
+                		<h3 style="margin-left:45px;">Greg Vandenberg</h3>
+                	</li>
+                	<li data-theme="a">
+                        <a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051266</h3>
+	                    	<p><strong>Vicadin</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
                     </li>
                     <li data-theme="a">
-                        <a href="profile_edit.html" data-transition="slide">
-                            <img src="img/greg.jpg" />
-                            <h4>Greg Vandenberg</h4>
-                        </a>
+                        <a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051261</h3>
+	                    	<p><strong>Vicadin</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
                     </li>
                     <li data-theme="a">
-                        <a href="profile_edit.html" class="ui-link-inherit" data-transition="slide">
-                            <img src="img/album-bb.jpg"/>
-                            <h4>Broken Bells</h4>
-                            
-                        </a>
-                        
+                        <a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051262</h3>
+	                    	<p><strong>Vicadin</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
                     </li>
-                 
+                    <li data-role="list-divider" class="ui-background-striped">
+                		<img src="img/album-bb.jpg" alt="Broken" height="50" width="50">
+                		<h3 style="margin-left:45px;">Broken Bells</h3>
+                	</li>
+                    <li data-theme="a">
+                        <a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051272</h3>
+	                    	<p><strong>Vicadin</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
+                    </li>
+                   
+                               
+                    
                 </ul>
-       
-				
+
             </div>
             
             <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter ui-background-striped">
@@ -101,11 +121,11 @@
 						<img id="menuReportIcon" src="img/menu_report_icon.png"/>
 					</div>
 				</div>
-                <div id="footerButton" style="margin:0px;padding:0px;">
+                <div style="margin:0px;padding:0px;">
                     <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-mini="true" data-inline="true" data-rel="popup" class="shadow" ><img src="img/menu_icon.png" height="42" width="66"/></a>
                 </div>
                 
-            </div><!-- /footer --> 
+            </div><!-- /footer -->
         </div>  
     </body>
 </html>
