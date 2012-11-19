@@ -34,6 +34,8 @@
 	</array>
 	<key>Plugins</key>
 	<dict>
+		<key>org.apache.cordova.barcodeScanner</key>
+		<string>CDVBarcodeScanner</string>
 		<key>applicationPreferences</key>
 		<string>applicationPreferences</string>
 		<key>Device</key>

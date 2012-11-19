@@ -59,6 +59,11 @@
 		51363E981649E38A00E51244 /* PWSetTagsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51363E8C1649E38A00E51244 /* PWSetTagsRequest.m */; };
 		51363E991649E38A00E51244 /* SMSComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51363E8E1649E38A00E51244 /* SMSComposer.m */; };
 		51363E9B1649E3F500E51244 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51363E9A1649E3F500E51244 /* MessageUI.framework */; };
+		51363EA9165600BB00E51244 /* CDVBarcodeScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51363EA6165600BB00E51244 /* CDVBarcodeScanner.mm */; };
+		51363EAA165600BB00E51244 /* zxing-all-in-one.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51363EA7165600BB00E51244 /* zxing-all-in-one.cpp */; };
+		51363EAC1656027700E51244 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51363EAB1656027700E51244 /* AssetsLibrary.framework */; };
+		51363EAE1656029000E51244 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51363EAD1656029000E51244 /* CoreVideo.framework */; };
+		51363EB0165602D300E51244 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51363EAF165602D300E51244 /* libiconv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +152,12 @@
 		51363E8D1649E38A00E51244 /* SMSComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSComposer.h; sourceTree = "<group>"; };
 		51363E8E1649E38A00E51244 /* SMSComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSComposer.m; sourceTree = "<group>"; };
 		51363E9A1649E3F500E51244 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		51363EA6165600BB00E51244 /* CDVBarcodeScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDVBarcodeScanner.mm; sourceTree = "<group>"; };
+		51363EA7165600BB00E51244 /* zxing-all-in-one.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "zxing-all-in-one.cpp"; sourceTree = "<group>"; };
+		51363EA8165600BB00E51244 /* zxing-all-in-one.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "zxing-all-in-one.h"; sourceTree = "<group>"; };
+		51363EAB1656027700E51244 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		51363EAD1656029000E51244 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		51363EAF165602D300E51244 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* PharmacyPal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PharmacyPal-Info.plist"; path = "../PharmacyPal-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +166,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51363EB0165602D300E51244 /* libiconv.dylib in Frameworks */,
+				51363EAE1656029000E51244 /* CoreVideo.framework in Frameworks */,
+				51363EAC1656027700E51244 /* AssetsLibrary.framework in Frameworks */,
+				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
 				51363E9B1649E3F500E51244 /* MessageUI.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -163,7 +178,6 @@
 				301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */,
 				301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */,
 				301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */,
-				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
 				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				301BF5C1109A6A2B0062928A /* MediaPlayer.framework in Frameworks */,
@@ -217,6 +231,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				51363EAF165602D300E51244 /* libiconv.dylib */,
+				51363EAD1656029000E51244 /* CoreVideo.framework */,
+				51363EAB1656027700E51244 /* AssetsLibrary.framework */,
 				51363E9A1649E3F500E51244 /* MessageUI.framework */,
 				51363E771649C73E00E51244 /* icon-72@2x.png */,
 				51363E751649C65900E51244 /* Default-Landscape~ipad.png */,
@@ -295,6 +312,9 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				51363EA6165600BB00E51244 /* CDVBarcodeScanner.mm */,
+				51363EA7165600BB00E51244 /* zxing-all-in-one.cpp */,
+				51363EA8165600BB00E51244 /* zxing-all-in-one.h */,
 				51363E791649E38A00E51244 /* applicationPreferences.h */,
 				51363E7A1649E38A00E51244 /* applicationPreferences.m */,
 				51363E7B1649E38A00E51244 /* HtmlWebViewController.h */,
@@ -498,6 +518,8 @@
 				51363E971649E38A00E51244 /* PWRequestManager.m in Sources */,
 				51363E981649E38A00E51244 /* PWSetTagsRequest.m in Sources */,
 				51363E991649E38A00E51244 /* SMSComposer.m in Sources */,
+				51363EA9165600BB00E51244 /* CDVBarcodeScanner.mm in Sources */,
+				51363EAA165600BB00E51244 /* zxing-all-in-one.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

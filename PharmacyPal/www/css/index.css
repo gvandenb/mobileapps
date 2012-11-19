@@ -27,9 +27,9 @@
 
 .mainContent {
 	height:100%;
-	min-height:330px;
+	min-height:340px;
 	margin:0px 0px 0px 0px;
-	padding-top:4px;
+	padding-top:0px;
 }
 
 .mainPage {
@@ -53,6 +53,13 @@
 	background:#ffffff url('../img/bknd.png') repeat top left;
 }
 
+.ui-background-chrome {
+	color:#000000;
+	background:#ffffff url('../img/bknd_list.png') repeat top left;
+}
+
 .ui-border-none {
 	border:0px;
+	padding:8px 0px;
+	margin:0px;
 }

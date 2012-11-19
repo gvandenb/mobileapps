@@ -25,69 +25,69 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
         <meta charset="utf-8">
-            <link rel="stylesheet" href="css/jquery-pharmacy-theme.css" />
-            <link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
-            <link rel="stylesheet" href="css/index.css" />
-       
-            
-            
-            <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
-            
-            <script type="text/javascript" src="js/google-maps-places.js"></script>
-            
-            <script type="text/javascript" src="js/jquery.min.js"></script>
-            <script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
-            <script type="text/javascript" src="js/jquery.ui.map.microformat.js"></script>
-            
-            <script type="text/javascript" src="js/jquery.ui.map.js"></script>
-            <script type="text/javascript" src="js/jquery.ui.map.overlays.js"></script>
-            <script type="text/javascript" src="js/jquery.ui.map.extensions.js"></script>
-            <script type="text/javascript" charset="utf-8" src="js/PushNotification.js"></script>
-            <script type="text/javascript" charset="utf-8" src="js/SMSComposer.js"></script>
-            <script type="text/javascript" src="js/index.js"></script>
-            <script type="text/javascript" src="js/barcodescanner.js"></script>
-            <script type="text/javascript" src="js/applicationPreferences.js"></script>
-            <script type="text/javascript"> 
-		    	app.initialize();
-			</script>
+ 
             
             </head>
     <body >
-        <div id="home" data-role="page" class="mainPage ui-corner-all">
+        <div id="prescriptions" data-role="page" class="mainPage ui-corner-all">
             <div data-role="header" align="center" class="mainHeader" data-position="fixed">
                 <img src="img/icon.png" height="36" width="36" class="ui-btn-left"/>
-                Profiles
-                <a href="profile_add.html" style="" data-theme="a" data-transition="slide" class="ui-btn-right" data-icon="plus">add</a>
-            	
-            </div>
+                Profile
+                <a href="profile_edit.html" style="" data-theme="a" data-transition="slide" class="ui-btn-right">edit</a>
+			</div>
             <div data-role="content" class="mainContent ui-background-striped" >
+            	<div style="background:#ffffff;color:#000000;padding:10px;margin:8px 0px;border: solid 1px #929292;" class="ui-corner-all">
+	            	<div style="width:100px;padding:0px;float:left;">
+		            	<img src="img/rachel.jpg" alt="Rachel" height="100" width="100">
+	            	</div>
+	            	<div style="padding:0px 0px 0px 10px;float:left;width:150px;">
+		            	<p>
+		            		<strong>Rachel Trippel</strong><br/>
+		            		<strong>Age: 26</strong><br/>
+		            		<strong>Blood Type: O+</strong>
+		            	</p>
+	            	</div>
+	            	<br clear="all"/>
+	            	<div>
+		            	<p>
+			            	<strong>Allergies:</strong><br/>
+			            	Allergic to strawberries
+		            	</p>
+		            	<p>
+		            		<strong>Notes:</strong><br/>
+		            		No notes provided
+		            	</p>
+	            	</div>
+	            	
+	            	
+            	</div>
+            	
                 <ul data-role="listview" style="margin-top:0px;">
-                    <li class="ui-background-striped" >
-                        <a href="profile.html" data-transition="slide" class="ui-link-inherit">
-                            <img src="img/rachel.jpg" />
-                            <h4>Rachel Trippel</h4>
-                            <p><strong>2 Prescriptions</strong></p>
-                        </a>
+                	<li data-role="list-divider" class="ui-background-chrome ui-border-none">
+                		
+                		<h3 style="margin-left:45px;">Prescriptions</h3>
+                		<span class="ui-li-count">2</span>
+                	</li>
+					
+                    <li data-theme="c" class="ui-background-striped">
+                    	<a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051256</h3>
+	                    	<p><strong>Metopropol</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
                     </li>
                     <li data-theme="c" class="ui-background-striped">
-                        <a href="profile.html" data-transition="slide">
-                            <img src="img/greg.jpg" />
-                            <h4>Greg Vandenberg</h4>
-                            <p><strong>2 Prescriptions</strong></p>
-                        </a>
+                        <a href="profile_edit.html" data-transition="slide" class="ui-link-inherit">
+	                    	<h3 style="margin-top:0px;">#200304051257</h3>
+	                    	<p><strong>Vicadin</strong></p>
+							<p><strong>2 pills every 12 hours</strong></p>
+							<p class="ui-li-aside"><strong>Alerts: On<br/>Refill: 10/25</strong></p>
+						</a>
                     </li>
-                    <li data-theme="c" class="ui-background-striped">
-                        <a href="profile.html" class="ui-link-inherit" data-transition="slide">
-                            <img src="img/album-bb.jpg"/>
-                            <h4>Broken Bells</h4>
-                            <p><strong>1 Prescription</strong></p>
-                        </a>
-                        
-                    </li>
-                 
+                   
                 </ul>
-       
-				
+
             </div>
             
             <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter ui-background-striped">
@@ -100,17 +100,17 @@
 						
 						<a href="index.html" data-transition="fade"><img id="menuProfilesIcon" src="img/menu_profiles_icon.png"/></a>
 						<a href="prescriptions.html" data-transition="fade"><img id="menuPrescriptionIcon" src="img/menu_prescriptions_icon.png"/></a>
-						<a href="my_drugs.html" data-transition="fade"><img id="menuDrugsIcon" src="img/menu_drugs_icon.png"/></a>
+						<img id="menuDrugsIcon" src="img/menu_drugs_icon.png"/>
                         <img id="menuVitaminsIcon" src="img/menu_vitamins_icon.png"/>
 						<img id="menuLocateIcon" src="img/menu_locate_icon.png"/>
 						<img id="menuReportIcon" src="img/menu_report_icon.png"/>
 					</div>
 				</div>
-                <div id="footerButton" style="margin:0px;padding:0px;">
+                <div style="margin:0px;padding:0px;">
                     <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-mini="true" data-inline="true" data-rel="popup" class="shadow" ><img src="img/menu_icon.png" height="42" width="66"/></a>
                 </div>
                 
-            </div><!-- /footer --> 
+            </div><!-- /footer -->
         </div>  
     </body>
 </html>

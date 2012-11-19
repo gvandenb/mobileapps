@@ -29,29 +29,24 @@
             
             </head>
     <body >
-        <div id="profileEdit" data-role="page" class="mainPage ">
+        <div id="scanBarcodePage" data-role="page" class="mainPage ">
             <div data-role="header" align="center" class="mainHeader" data-position="fixed">
                 <a href="index.html" data-rel="back">Back</a>
-                Edit Profile
+                Scan Bar Code
                 
             </div>
-            <div data-role="content" class="mainContent ui-background-striped">
-                <form action="form.php" method="post">
-					<div data-role="fieldcontain" class="ui-hide-label ui-border-none" >
-						<label for="firstname">First Name:</label>
-						<input type="text" name="firstname" id="firstname" value="" placeholder="First Name"/>
-					</div>
-					<div data-role="fieldcontain" class="ui-hide-label ui-border-none">
-						<label for="lastname">Last Name:</label>
-						<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name"/>
-					</div>
-					<div data-role="fieldcontain" class="ui-hide-label ui-border-none">
-						<label for="username3">Age:</label>
-						<input type="text" name="age" id="username3" value="" placeholder="Age"/>
-					</div>
-				</form>
-     
-            </div>
+            <div data-role="content" align="center" class="mainContent ui-background-striped">
+                <div style="color:#000000;padding:20px 10px;">
+	                <b>
+	                Scan the barcode on your prescription bottle.
+	                </b>
+                </div>
+				<a href="#" id="scanBarcode" data-role="button">Scan Now</a> 
+				<div style="float:left;width:250px;margin-top:20px;">
+					<img src="img/pill_bottle.png" height="150" width="124"/>
+				
+				</div>
+			</div>
             
             <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter ui-background-striped">
             	<div data-role="popup" id="popupPanel" data-shadow="true" style="margin-left:15px;margin-bottom:55px;padding-top:2px;" data-transition="fade" class="ui-background-striped shadow">

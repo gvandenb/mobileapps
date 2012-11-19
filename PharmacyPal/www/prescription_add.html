@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <!--
+     #
+     # Licensed to the Apache Software Foundation (ASF) under one
+     # or more contributor license agreements.  See the NOTICE file
+     # distributed with this work for additional information
+     # regarding copyright ownership.  The ASF licenses this file
+     # to you under the Apache License, Version 2.0 (the
+     # "License"); you may not use this file except in compliance
+     # with the License.  You may obtain a copy of the License at
+     #
+     # http://www.apache.org/licenses/LICENSE-2.0
+     #
+     # Unless required by applicable law or agreed to in writing,
+     # software distributed under the License is distributed on an
+     # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     #  KIND, either express or implied.  See the License for the
+     # specific language governing permissions and limitations
+     # under the License.
+     #
+     -->
+    <head>
+        <title></title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta charset="utf-8">
+          
+            
+            </head>
+    <body >
+        <div id="prescriptionAdd" data-role="page" class="mainPage ">
+           <script>
+           //var myDate = new Date();
+           //console.log("Tz: " + myDate.getTimezoneOffset());
+           </script>
+            <div data-role="header" align="center" class="mainHeader" data-position="fixed">
+                <a href="index.html" data-rel="back">Back</a>
+                Add Prescription
+                <a href="scan.html">Scan</a>
+            </div>
+            <div data-role="content" class="mainContent ui-background-striped">
+                <form action="form.php" method="post">
+                	<div data-role="fieldcontain" class="ui-hide-label ui-border-none" >
+	                	<label for="select-choice-0" class="select">Profile Name:</label>
+						<select name="select-choice-0" id="select-choice-0" data-mini="true">
+						   <option value="standard">Select a Profile</option>
+						   <option value="standard">Rachel Trippel</option>
+						   <option value="rush">Greg Vandenberg</option>
+						   <option value="express">Broken Bells</option>
+						</select>
+                	</div>
+					<div data-role="fieldcontain" class="ui-hide-label ui-border-none">
+						<label for="drugname">Drug Name:</label>
+						<input type="text" name="drugname" id="drugname" value="" placeholder="Drug Name" data-mini="true"/>
+					</div>
+					<div data-role="fieldcontain" class="ui-hide-label ui-border-none" >
+						<label for="prescription_num">Prescription #</label>
+						<input type="text" name="prescription_num" id="prescription_num" value="" placeholder="Prescription #" data-mini="true"/>
+					</div>
+					
+					<div data-role="fieldcontain" class="ui-hide-label ui-border-none">
+						<label for="qty">Quantity:</label>
+						<input type="text" name="qty" id="qty" value="" placeholder="Quantity" data-mini="true"/>
+					</div>
+					<div data-role="fieldcontain" class="ui-border-none" style="padding:0px 0px; margin:0px 0px;">
+						<fieldset data-role="controlgroup" data-type="horizontal">
+							<legend><span style="color:#929292;">Dosage:</span></legend>
+							<label for="select-choice-pills"># of Pills</label>
+					        <select name="select-choice-pills" id="select-choice-pills" data-mini="true">
+					            
+					            <option value="1">1 pill</option>
+					            <option value="2" selected>2 pills</option>
+					            <option value="3">3 pills</option>
+					            <option value="4">4 pills</option>
+					            <option value="5">5 pills</option>
+					            <option value="6">6 pills</option>
+					            <!-- etc. -->
+					        </select>
+					    
+					        <label for="select-choice-hours">Every # of Hours</label>
+					        <select name="select-choice-hours" id="select-choice-hours" data-mini="true">
+					        
+					            <option value="1">Every 1 hour</option>
+					           	<option value="2">Every 2 hours</option>
+					            <option value="3">Every 3 hours</option>
+					            <option value="4" selected>Every 4 hours</option>
+					            <option value="5">Every 5 hours</option>
+					            <option value="6">Every 6 hours</option>
+					            <option value="7">Every 7 hours</option>
+					            <option value="8">Every 8 hours</option>
+					            <option value="9">Every 9 hours</option>
+					            <option value="10">Every 10 hours</option>
+					            <option value="11">Every 11 hours</option>
+					            <option value="12">Every 12 hours</option>
+					            <!-- etc. -->
+					        </select>
+						</fieldset>
+					</div>
+					<div data-role="fieldcontain" class="ui-border-none" style="float:left;">
+						<fieldset data-role="controlgroup" data-type="horizontal">
+							<legend><span style="color:#929292;">Alert Schedule:</span></legend>
+							<label for="select-choice-alert">Start Time</label>
+					        <select name="select-choice-alert" id="select-choice-alert" data-mini="true">
+								
+					            <option value="1">1:00</option>
+					           	<option value="2">2:00</option>
+					            <option value="3">3:00</option>
+					            <option value="4">4:00</option>
+					            <option value="5">5:00</option>
+					            <option value="6">6:00</option>
+					            <option value="7" selected>7:00</option>
+					            <option value="8">8:00</option>
+					            <option value="9">9:00</option>
+					            <option value="10">10:00</option>
+					            <option value="11">11:00</option>
+					            <option value="12">12:00</option>
+					            					            
+					            <!-- etc. -->
+					        </select>
+					        
+					        
+					        <select name="select-choice-time-of-day" id="select-choice-time-of-day" data-mini="true">
+					            <option>Time of Day</option>
+					            <option value="am" selected>am</option>
+					            <option value="pm">pm</option>
+					            
+					            <!-- etc. -->
+					        </select>
+					        
+							
+							 
+						</fieldset>
+						
+					</div>
+					<div style="float:right;width:90px;padding:0px 0px;">
+						<legend><span style="display:block;color:#929292;padding:8px 0px 6px 0px;">Alerts:</span></legend>
+						<select name="flip-2" id="flip-2" data-role="slider" data-mini="true">
+							<option value="off">Off</option>
+							<option value="on" selected>On</option>
+							
+						</select>
+					</div>
+				</form>
+                
+                
+                
+                
+
+				
+             	
+				
+            </div>
+            
+            <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter ui-background-striped">
+            	<div data-role="popup" id="popupPanel" data-shadow="true" style="margin-left:15px;margin-bottom:55px;padding-top:2px;" data-transition="fade" class="ui-background-striped shadow">
+					<div data-role="header" align="center" style="margin:2px 4px 0px 4px;height:32px;padding-top:10px;">
+		              	Menu
+		              	<a href="#" data-rel="back" data-mini="true" data-inline="true" class="ui-btn-right ui-btn-corner-all">Close</a>
+		          	</div>
+		          	<div data-role="content" style="padding:8px 0px 7px 0px; margin:0px;" align="center">
+						
+						<a href="index.html" data-transition="fade"><img id="menuProfilesIcon" src="img/menu_profiles_icon.png"/></a>
+						<a href="prescriptions.html" data-transition="fade"><img id="menuPrescriptionIcon" src="img/menu_prescriptions_icon.png"/></a>
+						<img id="menuDrugsIcon" src="img/menu_drugs_icon.png"/>
+                        <img id="menuVitaminsIcon" src="img/menu_vitamins_icon.png"/>
+						<img id="menuLocateIcon" src="img/menu_locate_icon.png"/>
+						<img id="menuReportIcon" src="img/menu_report_icon.png"/>
+					</div>
+				</div>
+                <div style="margin:0px;padding:0px;">
+                    <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-mini="true" data-inline="true" data-rel="popup" class="shadow" ><img src="img/menu_icon.png" height="42" width="66"/></a>
+                </div>
+                
+            </div><!-- /footer -->  
+        </div>  
+    </body>
+</html>
