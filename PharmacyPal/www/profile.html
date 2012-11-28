@@ -31,21 +31,21 @@
     <body >
         <div id="prescriptions" data-role="page" class="mainPage ui-corner-all">
             <div data-role="header" align="center" class="mainHeader" data-position="fixed">
-                <img src="img/icon.png" height="36" width="36" class="ui-btn-left"/>
+                <a href="index.html" data-rel="back">Back</a>
                 Profile
                 <a href="profile_edit.html" style="" data-theme="a" data-transition="slide" class="ui-btn-right">edit</a>
 			</div>
             <div data-role="content" class="mainContent ui-background-striped" >
             	<div style="background:#ffffff;color:#000000;padding:10px;margin:8px 0px;border: solid 1px #929292;" class="ui-corner-all">
-	            	<div style="width:100px;padding:0px;float:left;">
-		            	<img src="img/rachel.jpg" alt="Rachel" height="100" width="100">
+	            	<div style="width:85px;padding:0px;float:left;">
+		            	<img src="img/rachel.jpg" alt="Rachel" height="65" width="65" class="shadow">
 	            	</div>
-	            	<div style="padding:0px 0px 0px 10px;float:left;width:150px;">
-		            	<p>
+	            	<div style="padding:0px 0px 0px 5px;float:left;width:150px;">
+		            	
 		            		<strong>Rachel Trippel</strong><br/>
 		            		<strong>Age: 26</strong><br/>
 		            		<strong>Blood Type: O+</strong>
-		            	</p>
+		            	
 	            	</div>
 	            	<br clear="all"/>
 	            	<div>
@@ -90,7 +90,7 @@
 
             </div>
             
-            <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter ui-background-striped">
+            <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter">
             	<div data-role="popup" id="popupPanel" data-shadow="true" style="margin-left:15px;margin-bottom:55px;padding-top:2px;" data-transition="fade" class="ui-background-striped shadow">
 					<div data-role="header" align="center" style="margin:2px 4px 0px 4px;height:32px;padding-top:10px;">
 		              	Menu
@@ -106,9 +106,7 @@
 						<img id="menuReportIcon" src="img/menu_report_icon.png"/>
 					</div>
 				</div>
-                <div style="margin:0px;padding:0px;">
-                    <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-mini="true" data-inline="true" data-rel="popup" class="shadow" ><img src="img/menu_icon.png" height="42" width="66"/></a>
-                </div>
+                <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-mini="true" data-inline="true" data-rel="popup" class="shadow" >Menu</a>
                 
             </div><!-- /footer -->
         </div>  

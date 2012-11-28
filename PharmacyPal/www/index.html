@@ -47,6 +47,7 @@
             <script type="text/javascript" src="js/index.js"></script>
             <script type="text/javascript" src="js/barcodescanner.js"></script>
             <script type="text/javascript" src="js/applicationPreferences.js"></script>
+            <script type="text/javascript" src="js/NavigationBar.js"></script>
             <script type="text/javascript"> 
 		    	app.initialize();
 			</script>
@@ -62,21 +63,21 @@
             </div>
             <div data-role="content" class="mainContent ui-background-striped" >
                 <ul data-role="listview" style="margin-top:0px;">
-                    <li class="ui-background-striped" >
+                    <li class="ui-background-chrome" >
                         <a href="profile.html" data-transition="slide" class="ui-link-inherit">
                             <img src="img/rachel.jpg" />
                             <h4>Rachel Trippel</h4>
                             <p><strong>2 Prescriptions</strong></p>
                         </a>
                     </li>
-                    <li data-theme="c" class="ui-background-striped">
+                    <li data-theme="c" class="ui-background-chrome">
                         <a href="profile.html" data-transition="slide">
                             <img src="img/greg.jpg" />
                             <h4>Greg Vandenberg</h4>
                             <p><strong>2 Prescriptions</strong></p>
                         </a>
                     </li>
-                    <li data-theme="c" class="ui-background-striped">
+                    <li data-theme="c" class="ui-background-chrome">
                         <a href="profile.html" class="ui-link-inherit" data-transition="slide">
                             <img src="img/album-bb.jpg"/>
                             <h4>Broken Bells</h4>
@@ -90,25 +91,48 @@
 				
             </div>
             
-            <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter ui-background-striped">
+            <div data-role="footer" data-id="foo1" data-position="fixed" class="mainFooter">
             	<div data-role="popup" id="popupPanel" data-shadow="true" style="margin-left:15px;margin-bottom:55px;padding-top:2px;" data-transition="fade" class="ui-background-striped shadow">
-					<div data-role="header" align="center" style="margin:2px 4px 0px 4px;height:32px;padding-top:10px;">
+					<div data-role="header" class="mainHeader" align="center" style="margin:2px 4px 0px 4px;height:32px;padding-top:10px;">
 		              	Menu
 		              	<a href="#" data-rel="back" data-mini="true" data-inline="true" class="ui-btn-right ui-btn-corner-all">Close</a>
 		          	</div>
-		          	<div data-role="content" style="padding:8px 0px 7px 0px; margin:0px;" align="center">
-						
-						<a href="index.html" data-transition="fade"><img id="menuProfilesIcon" src="img/menu_profiles_icon.png"/></a>
-						<a href="prescriptions.html" data-transition="fade"><img id="menuPrescriptionIcon" src="img/menu_prescriptions_icon.png"/></a>
-						<a href="my_drugs.html" data-transition="fade"><img id="menuDrugsIcon" src="img/menu_drugs_icon.png"/></a>
-                        <img id="menuVitaminsIcon" src="img/menu_vitamins_icon.png"/>
-						<img id="menuLocateIcon" src="img/menu_locate_icon.png"/>
-						<img id="menuReportIcon" src="img/menu_report_icon.png"/>
+		          	<div data-role="content" style="min-height:170px;padding:8px 0px 7px 0px; margin:0px;" align="center">
+						<div class="ui-icon-menu">
+							<a href="index.html" data-transition="fade">
+								<img id="menuProfilesIcon" src="img/menu_profiles_icon.png"/>
+								<img style="position:absolute;z-index:100;top:0;left:0;" src="img/icon_overlay.png"/>
+							</a>
+						</div>
+						<div class="ui-icon-menu">
+							<a href="prescriptions.html" data-transition="fade">
+								<img id="menuPrescriptionIcon" src="img/menu_prescriptions_icon.png"/>
+								<img style="position:absolute;z-index:100;top:0;left:0;" src="img/icon_overlay.png"/>
+							</a>
+						</div>
+						<div class="ui-icon-menu">
+							<a href="my_drugs.html" data-transition="fade">
+								<img id="menuDrugsIcon" src="img/menu_drugs_icon.png"/>
+								<img style="position:absolute;z-index:100;top:0;left:0;" src="img/icon_overlay.png"/>
+							</a>
+                        </div>
+						<div class="ui-icon-menu">
+							<img id="menuVitaminsIcon" src="img/menu_vitamins_icon.png"/>
+							<img style="position:absolute;z-index:100;top:0;left:0;" src="img/icon_overlay.png"/>
+						</div>
+						<div class="ui-icon-menu">
+							<img id="menuLocateIcon" src="img/menu_locate_icon.png"/>
+							<img style="position:absolute;z-index:100;top:0;left:0;" src="img/icon_overlay.png"/>
+						</div>
+						<div class="ui-icon-menu">
+							<img id="menuReportIcon" src="img/menu_report_icon.png"/>
+							<img style="position:absolute;z-index:100;top:0;left:0;" src="img/icon_overlay.png"/>
+						</div>
 					</div>
 				</div>
-                <div id="footerButton" style="margin:0px;padding:0px;">
-                    <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-mini="true" data-inline="true" data-rel="popup" class="shadow" ><img src="img/menu_icon.png" height="42" width="66"/></a>
-                </div>
+                <a  href="#popupPanel" class="footerPopupButton" data-role="button" data-icon="grid" data-mini="true" data-inline="true" data-rel="popup" class="shadow" >
+                Menu</a>
+                
                 
             </div><!-- /footer --> 
         </div>  

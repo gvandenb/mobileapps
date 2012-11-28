@@ -16,7 +16,7 @@
 }
 
 .mainHeader {
-	background:#35a7dd;
+	background:#35a7dd url('../img/header_bknd.png') repeat-x top left;
 	margin:0px;
 	height:30px;
 	padding:0px;
@@ -27,7 +27,7 @@
 
 .mainContent {
 	height:100%;
-	min-height:340px;
+	min-height:380px;
 	margin:0px 0px 0px 0px;
 	padding-top:0px;
 }
@@ -41,8 +41,11 @@
 }
 
 .mainFooter {
-	margin:0px 0px -1px 0px;
+	margin:0px 0px 0px 0px;
 	border:0px;
+	height:30px;
+	padding:4px;
+	background:#35a7dd url('../img/header_bknd.png') repeat-x top left;
 }
 
 .footerPopupButton {
@@ -55,11 +58,23 @@
 
 .ui-background-chrome {
 	color:#000000;
-	background:#ffffff url('../img/bknd_list.png') repeat top left;
+	background:#ffffff url('../img/bknd_list1.png') repeat top left;
 }
 
 .ui-border-none {
 	border:0px;
 	padding:8px 0px;
 	margin:0px;
+}
+
+.ui-icon-foo {
+	background-image: url("../img/menu_icon.png");
+}
+
+.ui-icon-menu {
+	float:left;
+	position:relative;
+	width:78px;
+	height:78px;
+	margin:3px;
 }

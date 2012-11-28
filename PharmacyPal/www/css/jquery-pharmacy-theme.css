@@ -152,12 +152,14 @@
 .ui-btn-down-a:hover,
 .ui-btn-down-a a.ui-link-inherit {
 	color: #000000 /*{a-bdown-color}*/;
+	
 }
 .ui-btn-up-a,
 .ui-btn-hover-a,
 .ui-btn-down-a {
 	  font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
+	background: transparent url('../img/btn_bknd.png') repeat-x top left;
 }
 
 
