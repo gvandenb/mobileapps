@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!--
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+-->
+  <head>
+  <title></title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+	
+  </head>
+  <body >
+      <div id="signin" data-role="page" class="mainPage ui-corner-all"> 
+          <div data-role="header" align="center" class="mainHeader" data-position="fixed">
+              Sign In
+          </div> 
+          <div data-role="content" class="mainContent ui-background-striped" >
+          		<form id="signIn" action="http://dev.mypharmacypal.com/site/login" method="post">
+          		<div id="registerBlock" class="ui-corner-all contentModule">
+	          		<div style="font-size:18px;font-weight:bold;padding:10px 10px 0px 10px;">
+	          		New to myPharmacyPal?<br/>
+	          		</div>
+	          		<hr/>
+	          		<div style="padding:0px 10px 10px 10px;font-size:14px;color:#000000;">
+		          		Registering is super quick and lets you enjoy all that myPharmacyPal has to offer<br/>
+		          		<a href="register.html" style="margin-top:10px;" id="join" data-role="button" data-theme="d" data-transition="slide">Join myPharmacyPal</a>
+	          		</div>
+          		</div>
+          		
+          		<div id="signInBlock" class="ui-corner-all contentModule">
+	          		<div style="font-size:18px;font-weight:bold;padding:10px 10px 0px 10px;">
+	          		Already an member?<br/>
+	          		</div>
+	          		<hr/>
+	          		<fieldset>
+	          		<div  class="ui-hide-label" align="center" style="padding:5px 10px 10px 10px;">
+						<label for="username">Username</label>
+						<input type="url" name="LoginForm[username]" id="username" value="" placeholder="Email" style="margin:5px;"/>
+						<div id="usernameError" class="errorMessage"></div>
+						<label for="password">Password</label>
+						<input type="password" name="LoginForm[password]" id="password" value="" placeholder="Password" style="margin:5px;"/>
+						<div id="passwordError" class="errorMessage"></div>
+					</div>
+					<div style="padding:0px 10px 10px 10px;">
+						<button id="signinSubmit" type="submit" data-role="button" data-theme="d" >Sign In</button>
+					</div>
+	          		</fieldset>
+          		</div>
+          		</form>
+          		
+          </div> 
+          <div data-role="footer" data-id="foo1" data-position="fixed">
+              <div data-role="navbar">
+                  <ul>
+   
+                  </ul>
+                  
+              </div><!-- /navbar -->
+          </div><!-- /footer --> 
+      </div>  
+    </body>
+</html>

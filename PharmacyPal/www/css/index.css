@@ -27,7 +27,7 @@
 
 .mainContent {
 	height:100%;
-	min-height:380px;
+	min-height:400px;
 	margin:0px 0px 0px 0px;
 	padding-top:0px;
 }
@@ -46,6 +46,18 @@
 	height:30px;
 	padding:4px;
 	background:#35a7dd url('../img/header_bknd.png') repeat-x top left;
+}
+
+.contentModule {
+	background:#ffffff;
+	color:#929292;
+	padding:0px;
+	margin:8px 0px;
+	border: solid 1px #929292;
+}
+
+.errorMessage {
+	color:#ff0000;
 }
 
 .footerPopupButton {
